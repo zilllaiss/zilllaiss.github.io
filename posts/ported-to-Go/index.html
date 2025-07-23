@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ported-to-Go - Zill_Laiss&#39; blog</title>
+    <link rel="stylesheet" href="/assets/styles/global.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/1">Blog</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <main class="main-pair">
+      <article class="post-field">
+        <section class="post-header">
+          <h1 class="post-title">Rewritten in Go</h1>
+          <div class="post-date">
+            Written by Zill_Laiss <span>on 2025-07-23</span>
+          </div>
+          <div>
+            <span class="tag"><a href="/tags/astro">astro</a></span
+            ><span class="tag"><a href="/tags/coding">coding</a></span
+            ><span class="tag"><a href="/tags/fest">fest</a></span
+            ><span class="tag"><a href="/tags/go">go</a></span
+            ><span class="tag"><a href="/tags/templ">templ</a></span>
+          </div>
+          <p style="margin-top: 30px">
+            More than a year ago, I was relly excited to build this site with
+            Astro, a popular static site generator. However, that excitement
+            ended up to not last very long.
+          </p>
+        </section>
+        <section class="post-content">
+          <p>
+            This site is now written with
+            <a href="https://github.com/zilllaiss/FEST">FEST</a>, a minimalistic
+            static-site generator I made. I want to say that it is
+            <em>ported</em> since the new source code for is one-to-one with
+            original code written in Astro-js in most area, but there are some
+            big changes.
+          </p>
+          <p>
+            Most of the change is in the routing. Astro follow a folder-based
+            routing. That means you make a folder with route name yous wish, and
+            in that folder you made a <code>index.html</code>. Most of JS
+            frameworks have similar features for routing.
+          </p>
+          <p>
+            Now, the routing in Go is more similar to router library like Chi
+            (actually one of my inspiration) or Express.js.
+          </p>
+          <p>
+            Another big change that I had to make is that I need to implemented
+            convert Markdown files myself, although it is easily handled as Go
+            libraries for that already exists.
+          </p>
+          <blockquote>
+            <p>
+              Side note: As I think most people do, I cr*nged at my old (and my
+              first and only) post.
+            </p>
+          </blockquote>
+          <h2 id="the-reasons-why">The Reasons Why.</h2>
+          <p>
+            Every time I revisit my blog, something breaks. Whenever I opened
+            the site, thinking about writing or tweaking something to my
+            site—and instead, I was greeted with warnings, API and documentation
+            changes, and worse—security issues. To me it's funny that a
+            static-site generator has security issues, but knowing Astro has a
+            lot more features, I suppose it's natural for it to have them.
+          </p>
+          <p>
+            I really wanted to ignore those as I only use it for static-site,
+            but literally npm told me that there are
+            <em>20 vulnerabilities</em>.
+          </p>
+          <p>
+            To be fair, this isn’t strictly Astro’s fault. This is a broader
+            issue with the JavaScript ecosystem—where even doing
+            <em>nothing</em> can result in things silently breaking over time.
+          </p>
+          <p>
+            It’s hard to stay motivated when you feel like you're constantly
+            fixing instead of building.
+          </p>
+          <p>
+            I want is stability. I only need a static website. No need for
+            constant upgrades just to keep things from falling apart. That’s why
+            I wrote my own static site generator in Go—using
+            <a href="https://templ.guide/">Templ</a>. It's minimal, fast, and
+            worry-free. I’ve been using Go and Templ intensively for the past
+            two years, and I love the DX that comes along with it.
+          </p>
+          <h2 id="afterthought">Afterthought</h2>
+          <p>
+            Astro is still good, just not for me, It’s well-designed, and for a
+            lot of people it’s the right choice. But it’s made to be a
+            feature-rich platform—a part of the fast-evolving JavaScript world.
+            That means it comes with a long tail of dependencies and
+            expectations for maintenance.
+          </p>
+          <p>That’s just not what I want right now.</p>
+          <h2 id="whats-next">What’s Next</h2>
+          <ul>
+            <li>
+              I’m migrating from Sass to plain CSS. Sass doesn’t break as often,
+              but it still does occasionally. I also considered Tailwind, but
+              using it with Templ is not a good of an idea. Go build is fast,
+              but if you need to change something in HTML will need you to
+              rebuild the binary. So it can get pretty tedious fast.
+            </li>
+          </ul>
+          <p>
+            I do use 'hot-reload', which is a combination of Task (aka. go-task)
+            and live-server, so it's not that bad. However, different with HTML
+            files itself, I often thinker the styling, so having it rebuild the
+            binary every time for CSS change is the last thing I want.
+          </p>
+          <p>
+            And frankly, I just love a more minimalistic choice when it is make
+            sense to do so (and most of the time do).
+          </p>
+          <ul>
+            <li>
+              I’ll finish the site. Most of the pages are unfinished. Actually,
+              most of them haven't. The ones that I considered &quot;mostly
+              finished&quot; are the Blog and Post pages.
+            </li>
+          </ul>
+        </section>
+      </article>
+      <aside class="bar-right">
+        <div
+          class="toc"
+          x-data="{ scrolled: false }"
+          @scroll.window="scrolled = window.scrollY >= 80"
+          x-bind:style="scrolled ? 'position: fixed; top: 80px' : '' "
+        >
+          <h2><a href="#">On this page:</a></h2>
+          <ul>
+            <li>
+              <a href="#the-reasons-why">The Reasons Why.</a>
+            </li>
+            <li>
+              <a href="#afterthought">Afterthought</a>
+            </li>
+            <li>
+              <a href="#whats-next">What’s Next</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <style>
+      .post-date span {
+        margin-left: 0;
+      }
+    </style>
+    <script defer src="/assets/js/lib/alpine.js"></script>
+    <footer>© 2025 Zill_Laiss.</footer>
+  </body>
+</html>
