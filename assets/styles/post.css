@@ -117,6 +117,12 @@
   border-left: 5px solid var(--title-blue);
   padding-left: 15px;
   margin-left: 0;
+  background-color: #000;
+  padding-block: 0.1rem;
+  color: #8dadbf;
+  font-style: italic;
+  margin-right: 0;
+  padding-right: 1rem;
 }
 .post-content pre {
   background-color: #000;

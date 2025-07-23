@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ported-to-Go - Zill_Laiss&#39; blog</title>
+    <title>rewritten-in-Go - Zill_Laiss&#39; blog</title>
     <link rel="stylesheet" href="/assets/styles/global.css" />
     <link rel="icon" href="/favicon.png" type="image/png" />
   </head>
@@ -66,7 +66,7 @@
               first and only) post.
             </p>
           </blockquote>
-          <h2 id="the-reasons-why">The Reasons Why.</h2>
+          <h2 id="the-reasons-why">The Reasons Why</h2>
           <p>
             Every time I revisit my blog, something breaks. Whenever I opened
             the site, thinking about writing or tweaking something to my
@@ -107,32 +107,35 @@
           </p>
           <p>That’s just not what I want right now.</p>
           <h2 id="whats-next">What’s Next</h2>
-          <ul>
-            <li>
-              I’m migrating from Sass to plain CSS. Sass doesn’t break as often,
-              but it still does occasionally. I also considered Tailwind, but
-              using it with Templ is not a good of an idea. Go build is fast,
-              but if you need to change something in HTML will need you to
-              rebuild the binary. So it can get pretty tedious fast.
-            </li>
-          </ul>
+          <ol>
+            <li>I’m migrating from Sass to plain CSS**</li>
+          </ol>
+          <p>
+            Sass doesn’t break as often, but it still does occasionally. I also
+            considered Tailwind, but using it with Templ is not a good of an
+            idea. Go build is fast, but if you need to change something in HTML
+            will need you to rebuild the binary. So it can get tedious pretty
+            fast, especially since I'm using older and weaker laptop.
+          </p>
           <p>
             I do use 'hot-reload', which is a combination of Task (aka. go-task)
-            and live-server, so it's not that bad. However, different with HTML
-            files itself, I often thinker the styling, so having it rebuild the
-            binary every time for CSS change is the last thing I want.
+            watch feature and live-server, so it's not that bad. However,
+            different with HTML files itself, I often thinker the styling, so
+            having it rebuild the binary every time for CSS change is the last
+            thing I want.
           </p>
           <p>
             And frankly, I just love a more minimalistic choice when it is make
             sense to do so (and most of the time do).
           </p>
-          <ul>
-            <li>
-              I’ll finish the site. Most of the pages are unfinished. Actually,
-              most of them haven't. The ones that I considered &quot;mostly
-              finished&quot; are the Blog and Post pages.
-            </li>
-          </ul>
+          <ol start="2">
+            <li>I’ll finish the site.</li>
+          </ol>
+          <p>
+            Most of the pages are unfinished. Actually, most of them haven't.
+            The ones that I considered &quot;mostly finished&quot; are the Blog
+            and Post pages.
+          </p>
         </section>
       </article>
       <aside class="bar-right">
@@ -145,7 +148,7 @@
           <h2><a href="#">On this page:</a></h2>
           <ul>
             <li>
-              <a href="#the-reasons-why">The Reasons Why.</a>
+              <a href="#the-reasons-why">The Reasons Why</a>
             </li>
             <li>
               <a href="#afterthought">Afterthought</a>
