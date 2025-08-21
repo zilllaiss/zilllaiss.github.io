@@ -262,7 +262,8 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: var(--mainmargin);
+  margin: auto;
+  width: clamp(40rem, 80%, 60rem);
   padding: 20px;
 }
 .main-single h2 {
@@ -285,6 +286,7 @@ html {
   border-color: var(--color-border);
   border-radius: 15px;
   padding-bottom: 0.6rem;
+  width: clamp(30rem, 70%, 80rem);
   justify-self: center;
   align-self: center;
 }
@@ -395,6 +397,7 @@ html {
   }
   .grid-first {
     border: none;
+    width: 100%;
   }
   .main-container {
     margin: 4rem 0;
@@ -410,7 +413,7 @@ html {
   .main-single-center {
     padding: var(--default-mobile);
     margin: var(--default-mobile);
-    max-width: 100vw;
+    width: clamp(20rem, 100%, 50rem);
   }
   .main-single-child {
     width: unset;
