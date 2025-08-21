@@ -11,6 +11,7 @@
   --title-blue: #6a81ff;
   --link-blue: #9eadff;
   --cyan: #00ffe7;
+  --color-border: #2d2828;
   --contentlinespacing: 1.5rem;
   --contentmarginright: 26px;
   --default-mobile: 1.3rem 0;
@@ -66,7 +67,7 @@
   margin-bottom: 10px;
 }
 .post-container {
-  border-left: 2px solid #8e8e8e;
+  border-left: 2px solid var(--color-border);
   padding-left: 15px;
   margin-left: 0;
   line-height: 1.5rem;
@@ -83,6 +84,8 @@
   max-width: calc(var(--outerwidth) - var(--bar-width) - 100px);
   max-height: auto;
   margin-top: 14px;
+  display: block;
+  margin: auto;
 }
 .post-content {
   margin: 0 20px 20px;
@@ -130,6 +133,12 @@
   color: var(--txwhite);
   display: flex;
   padding: 16px;
+}
+.post-content img {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .tag {
