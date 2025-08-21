@@ -59,10 +59,8 @@ nav ul {
   align-items: center;
   flex-direction: unset;
   list-style-type: none;
-  margin: 0 6rem 0 6rem;
   padding: 0;
   overflow: hidden;
-  min-width: 420px;
 }
 nav ul li {
   float: left;
@@ -72,7 +70,7 @@ nav ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 nav ul li a:hover {
   background-color: #252550;
