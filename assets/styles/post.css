@@ -175,5 +175,10 @@
     margin: var(--default-mobile);
   }
 }
+.bsm {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
 
 /*# sourceMappingURL=post.css.map */

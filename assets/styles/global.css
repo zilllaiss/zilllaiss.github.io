@@ -175,6 +175,12 @@
     margin: var(--default-mobile);
   }
 }
+.bsm {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
 body {
   color: var(--txwhite);
   font-size: 1rem;
@@ -254,9 +260,6 @@ html {
   margin: var(--mainmargin);
   padding: var(--upperpadding);
 }
-.main-single-child {
-  width: clamp(8rem, 80%, 59rem);
-}
 .main-single-center {
   display: flex;
   justify-content: center;
@@ -272,6 +275,18 @@ html {
 .main-pair {
   display: flex;
   justify-content: center;
+}
+
+.main-single-child {
+  width: clamp(8rem, 100%, 59rem);
+}
+
+.about {
+  width: clamp(8rem, 100%, 59rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-main {
@@ -450,6 +465,11 @@ html {
 
 .post-date {
   color: #fff;
+}
+
+.sieimee {
+  margin-bottom: 0.5rem;
+  width: 12rem;
 }
 
 /*# sourceMappingURL=global.css.map */
