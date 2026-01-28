@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islamic database website launched - Zill_Laiss&#39; blog</title>
+    <link rel="stylesheet" href="/assets/styles/global.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/styles/post.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/1">Blog</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <main class="main-pair">
+      <article class="post-field">
+        <section class="post-header">
+          <h1 class="post-title">Islamic database website launched</h1>
+          <div class="post-date">
+            Written by Zill_Laiss <span>on 2026-01-28</span>
+          </div>
+          <div>
+            <span class="tag"><a href="/tags/filafaq">filafaq</a></span
+            ><span class="tag"><a href="/tags/go">go</a></span>
+          </div>
+          <div class="bsm"><bdi>بسم الله</bdi></div>
+          <p>
+            Alhamdu lillāh, after more than a year of development, I have
+            launched to public the first version of Fī &#39;l-āfāq (aka.
+            filafaq), an Islamic database website on November 15th 2025.
+          </p>
+        </section>
+        <section class="post-content">
+          <p>
+            The goal is to allow people, especially Muslims, to discover
+            information and beneficial knowledge from across the horizons, while
+            also preserving the knowledge with the collaborations of Muslims so
+            it is not gone with the passage of time. The main entry is
+            Literature, which includes book, article, and any beneficial written
+            form of Islamic knowledge.
+          </p>
+          <p>
+            The site is backend written in Go. The frontend uses Templ (Go
+            library), HTMX, and Alpine as the main components.
+          </p>
+          <p>
+            It's been 2 months since then, and biidhnillāh, I'm working on
+            populating the website with information. There's currently only less
+            than 20 literatures, and I'm planning to add more.
+          </p>
+          <p>
+            The site is still pretty much in early launch so the entries count
+            overall is still few. The features are also basics, but more of them
+            to come, in shāa Allah.
+          </p>
+          <figure>
+            <img
+              src="/assets/images/filafaq_main_page.jpg"
+              alt="filafaq main page"
+            />
+            <figcaption><p>filafaq main page</p></figcaption>
+          </figure>
+          <h2 id="links">Links</h2>
+          <ul>
+            <li><a href="https://filafaq.net">Wesbite link</a></li>
+            <li><a href="https://filafaq.net/doc/faq">Website's FAQ</a></li>
+          </ul>
+          <h2 id="current-features">Current features</h2>
+          <ul>
+            <li>Free registration.</li>
+            <li>
+              Extensive information regarding literature and its editions.
+            </li>
+            <li>Add your own favourite literature to the database.</li>
+            <li>Add quranic reference to a literature.</li>
+            <li>See relation for literature to other literatures.</li>
+            <li>Mark literature with Tag for easier discoverability.</li>
+            <li>Discover random literature.</li>
+            <li>Add star to your favorite literatures.</li>
+            <li>Revert back any accidental change with reversion feature.</li>
+            <li>
+              Discuss literature (and other Islamic topics) with other users.
+            </li>
+            <li>User's literature listing.</li>
+          </ul>
+          <h2 id="planned-features">Planned features</h2>
+          <ul>
+            <li>Advanced search.</li>
+            <li>Light mode.</li>
+            <li>Better mobile support.</li>
+            <li>Text hosting for public domain literatures.</li>
+            <li>archive.org-style books borrowing</li>
+            <li>Links to libraries &amp; stores</li>
+            <li>Opening the database.</li>
+            <li>Create API for developers to use.</li>
+            <li>
+              Export entry information as printable media (odt, docx, etc.)
+            </li>
+            <li>
+              Adding more entry types (Applications, book references, etc.).
+            </li>
+          </ul>
+          <h2 id="known-issues">Known issues</h2>
+          <ul>
+            <li>No favicon yet.</li>
+            <li>
+              There's no way to mark books with volumes together (Literature
+              Group entry is coming).
+            </li>
+            <li>Documentation is incomplete.</li>
+            <li>Inconsistent visual across the sites.</li>
+          </ul>
+        </section>
+      </article>
+      <aside class="bar-right">
+        <div
+          class="toc"
+          x-data="{ scrolled: false }"
+          @scroll.window="scrolled = window.scrollY >= 80"
+          x-bind:style="scrolled ? 'position: fixed; top: 80px' : '' "
+        >
+          <h2>Table of Content</h2>
+          <p style="margin: 0; margin-top: 0.3rem">
+            <a href="#">Islamic database website launched</a>
+          </p>
+          <ul>
+            <li>
+              <a href="#links">Links</a>
+            </li>
+            <li>
+              <a href="#current-features">Current features</a>
+            </li>
+            <li>
+              <a href="#planned-features">Planned features</a>
+            </li>
+            <li>
+              <a href="#known-issues">Known issues</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <style>
+      .post-date span {
+        margin-left: 0;
+      }
+    </style>
+    <script defer src="/assets/js/lib/alpine.js"></script>
+    <footer>© 2026 Zill_Laiss.</footer>
+  </body>
+</html>
