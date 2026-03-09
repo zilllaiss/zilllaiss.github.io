@@ -23,7 +23,7 @@
           <h1 class="post-title">Rewritten in Go</h1>
           <div class="post-date">
             Written by Zill_Laiss <span>on 2025-07-23</span>
-            <span>(Updated on 2025-08-20)</span>
+            <span>(Updated on 2026-03-09)</span>
           </div>
           <div>
             <span class="tag"><a href="/tags/astro">astro</a></span
@@ -40,10 +40,13 @@
           </p>
         </section>
         <section class="post-content">
+          <blockquote>
+            <p>Updated the FEST link after the migration to Codeberg</p>
+          </blockquote>
           <p>
             This site is now written with
-            <a href="https://github.com/zilllaiss/FEST">FEST</a>, a minimalistic
-            static-site generator I made. I want to say that it is
+            <a href="https://codeberg.org/zill_laiss/fest">FEST</a>, a
+            minimalistic static-site generator I made. I want to say that it is
             <em>ported</em> since the new source code for is one-to-one with
             original code written in Astro-js in most area, but there are some
             big changes.
@@ -137,12 +140,12 @@
       </article>
       <aside class="bar-right">
         <div
-          class="toc"
+          class="toc bg-gray-l border border-color"
           x-data="{ scrolled: false }"
           @scroll.window="scrolled = window.scrollY >= 80"
           x-bind:style="scrolled ? 'position: fixed; top: 80px' : '' "
         >
-          <h2>Table of Content</h2>
+          <h2 class="hferiae">Table of Content</h2>
           <p style="margin: 0; margin-top: 0.3rem">
             <a href="#">Rewritten in Go</a>
           </p>
