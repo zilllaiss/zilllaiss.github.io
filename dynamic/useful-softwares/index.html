@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful softwares. - ZL</title>
+    <link rel="stylesheet" href="/assets/styles/global.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/styles/post.css" />
+  </head>
+  <body>
+    <nav class="afirnyt">
+      <ul class="bfergrt">
+        <li class="iokfrse"><a href="/">Home</a></li>
+        <li
+          class="nburgier"
+          id="dd-explore"
+          x-data="{ ddExploreShow: false, ddExploreClicked: false }"
+          x-bind:class="ddExploreShow ? 'iefmriwi' : '' "
+          x-on:mouseenter="if (!ddExploreClicked) ddExploreShow = true"
+          x-on:mouseleave="if (!ddExploreClicked) ddExploreShow = false"
+          x-on:click="
+                    if (!ddExploreClicked) 
+                        ddExploreShow = ddExploreClicked = true
+                    else
+                        ddExploreShow = ddExploreClicked = !ddExploreShow
+                "
+          x-on:click.outside="ddExploreShow = ddExploreClicked = false"
+        >
+          <a href="#dd-explore">Explore</a>
+          <ul
+            class="sfn4unse"
+            x-show="ddExploreShow"
+            x-bind:class="ddExploreShow ? 'iefmriwi' : '' "
+          >
+            <li class="tgrirsrr">
+              <a href="/blog/1"
+                ><div>Blog</div>
+                <div class="fiejgrse">
+                  Latest articles sorted chronologically
+                </div></a
+              >
+            </li>
+            <li class="tgrirsrr">
+              <a href="/dynamic"
+                ><div>Dynamic articles</div>
+                <div class="fiejgrse">
+                  List of constantly updated articles
+                </div></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="iokfrse"><a href="/projects">Projects</a></li>
+        <li class="iokfrse"><a href="/tags/">Tags</a></li>
+        <li class="iokfrse"><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <main class="main-pair">
+      <article class="post-field">
+        <section class="post-header">
+          <h1 class="post-title">Useful softwares.</h1>
+          <div class="post-date">
+            Written by Zill_Laiss <span>on 2026-06-10</span>
+          </div>
+          <div class="bsm"><bdi>بسم الله</bdi></div>
+          <p>
+            Here is the list of softwares I find useful. It includes stuff that
+            I use on daily basis to the ones that I&#39;ve tried at least once.
+          </p>
+        </section>
+        <section class="post-content">
+          <h2 id="personally-used-on-daily-basis">
+            Personally used on daily basis.
+          </h2>
+          <p>Softwares that I regularly. A must have for me.</p>
+          <dl>
+            <dt>KDE Plasma</dt>
+            <dd>
+              Linux desktop environment which you can costumize to virtually
+              whatever you want.
+            </dd>
+            <dt>Konsole</dt>
+            <dd>
+              KDE Plasma default terminal and the best overall. It supports
+              non-latin characters gracefully.
+            </dd>
+            <dt>Firefox</dt>
+            <dd>
+              Does not everyone know this browser? Although, I actually use
+              LibreWolf since it has sane defaults, but it's still firefox in
+              the end, right?
+            </dd>
+            <dt>Sleek</dt>
+            <dd>
+              A Todo app which built on top todo.txt. A GUI is more convenient
+              for this, but I also need the todo list to be portable, so I can
+              open the files without an app as they are just a plain text.
+            </dd>
+            <dt>Drawy</dt>
+            <dd>
+              Drawing app which I open whenever I need to quickly dump an idea
+              that appears on my head. Contains some nice features beside the
+              basic ones. But more importantly, it looks nice and fast.
+            </dd>
+            <dt>Neovim</dt>
+            <dd>
+              My main text editor. Normally for coding, but since I installed
+              telescope as one of the plugins, I also use it for file search and
+              navigation.
+            </dd>
+            <dt>Vim</dt>
+            <dd>
+              Same idea as Drawy; mainly used whenever I need to dump any idea
+              that appears on my mind, but this time with text.
+            </dd>
+            <dt>Kwrite</dt>
+            <dd>
+              Another text editor. I use this whenever I think it's more
+              convient to use a GUI. It has Vim mode so that's nice.
+            </dd>
+            <dt>Yazi</dt>
+            <dd>
+              File explorer for the terminal. Has file previews and good file
+              navigation.
+            </dd>
+            <dt>Dolphin</dt>
+            <dd>
+              KDE default file explorer. I use it as frequent as Yazi since
+              Dolphin has more features than Yazi. Actually, Dolphin is arguably
+              the file explorer which has the most features on Linux.
+            </dd>
+            <dt>Localsend</dt>
+            <dd>
+              For sending stuff between my devices, and also other people since
+              it is cross-platforms.
+            </dd>
+            <dt>Krita</dt>
+            <dd>
+              A graphic editor made by KDE. Mainly used for drawing, but it's
+              also pretty good for photo editing, vector graphic, and 2D
+              animation.
+            </dd>
+            <dt>Qur'an Companion</dt>
+            <dd>
+              Qur'an desktop app. Probably the best Qur'an app that can be used
+              offline on Linux.
+            </dd>
+            <dt>Quod libet</dt>
+            <dd>
+              Playlist-based audio player. I chose this over other audio players
+              because of three reasons: Has all basic features needed for
+              playing audios, has stability, and most importantly: audio
+              waveform.
+            </dd>
+            <dt>Mpv</dt>
+            <dd>
+              Has the best plugin system from any video players. I use it
+              primarily because it has the <code>thumbfast</code> plugin, for
+              video seek preview.
+            </dd>
+            <dt>Anki</dt>
+            <dd>
+              The word means memorization. Just as the name suggest, this is
+              primarily used by people for memorization, language learning and
+              reviewing. But in reality, you can use this for any dictionary
+              memorization.
+            </dd>
+            <dt>FreeFileSync</dt>
+            <dd>
+              For doing back up, which is available for Linux and Windows.
+            </dd>
+            <dt>Discord</dt>
+            <dd>For chatting with people.</dd>
+          </dl>
+          <h2 id="helpful-to-have">Helpful to have.</h2>
+          <p>Softwares that must be installed on every computer I have.</p>
+          <dl>
+            <dt>LibreOffice</dt>
+            <dd>
+              Office suite. I edit texts on Neovim before moving it to
+              LibreOffice writer.
+            </dd>
+            <dt>AppManager</dt>
+            <dd>For managing and &quot;installing&quot; AppImages.</dd>
+            <dt>Haruna</dt>
+            <dd>
+              Video player I used before moving to MPV... and actually, it built
+              on MPV as well. If there was <code>thumbfast</code> installed on
+              it, I would not have moved. I still have it installed just in
+              case.
+            </dd>
+            <dt>AB Download Manager</dt>
+            <dd>
+              Download manager I need if the file I download has a big size.
+            </dd>
+          </dl>
+        </section>
+      </article>
+      <aside class="bar-right">
+        <div
+          class="toc bg-gray-l border border-color"
+          x-data="{ scrolled: false }"
+          @scroll.window="scrolled = window.scrollY >= 80"
+          x-bind:style="scrolled ? 'position: fixed; top: 80px' : '' "
+        >
+          <h2 class="hferiae">Table of Content</h2>
+          <p style="margin: 0; margin-top: 0.3rem">
+            <a href="#">Useful softwares.</a>
+          </p>
+          <ul>
+            <li>
+              <a href="#personally-used-on-daily-basis"
+                >Personally used on daily basis.</a
+              >
+            </li>
+            <li>
+              <a href="#helpful-to-have">Helpful to have.</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <style>
+      .post-date span {
+        margin-left: 0;
+      }
+    </style>
+    <script defer src="/assets/js/lib/alpine.js"></script>
+    <footer>© 2026 Zill_Laiss.</footer>
+  </body>
+</html>

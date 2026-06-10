@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>filafaq - ZL</title>
+    <title>Useful softwares. - ZL</title>
     <link rel="stylesheet" href="/assets/styles/global.css" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/assets/styles/post.css" />
@@ -56,17 +56,63 @@
         <li class="iokfrse"><a href="/about">About</a></li>
       </ul>
     </nav>
-    <main class="main-container">
-      <h2>filafaq</h2>
-      <article class="main-single-child">
-        <p>Post tagged with filafaq</p>
-        <ul>
-          <li>
-            <a href="/posts/filafaq">Islamic database website launched</a>
-          </li>
-        </ul>
+    <main class="main-pair">
+      <article class="post-field">
+        <section class="post-header">
+          <h1 class="post-title">Useful softwares.</h1>
+          <div class="post-date">
+            Written by Zill_Laiss <span>on 2026-06-07</span>
+          </div>
+          <div class="tag-field">
+            <span class="tag"
+              ><a href="/tags/constantly updated">constantly updated</a></span
+            ><span class="tag"><a href="/tags/list">list</a></span>
+          </div>
+          <div class="bsm"><bdi>بسم الله</bdi></div>
+          <p>
+            Here is the list of softwares I find useful. It includes stuff that
+            I use on daily basis or the ones that I&#39;ve tried and I find
+            might be useful for someone else.
+          </p>
+        </section>
+        <section class="post-content">
+          <h2 id="personally-used-by-me-on-daily-basis">
+            Personally used by me on daily basis.
+          </h2>
+          <dl>
+            <dt>KDE Plasma</dt>
+            <dd>Linux Desktop environment of choice.</dd>
+            <dt>Krita</dt>
+            <dd>Graphic editor made by KDE.</dd>
+          </dl>
+        </section>
       </article>
+      <aside class="bar-right">
+        <div
+          class="toc bg-gray-l border border-color"
+          x-data="{ scrolled: false }"
+          @scroll.window="scrolled = window.scrollY >= 80"
+          x-bind:style="scrolled ? 'position: fixed; top: 80px' : '' "
+        >
+          <h2 class="hferiae">Table of Content</h2>
+          <p style="margin: 0; margin-top: 0.3rem">
+            <a href="#">Useful softwares.</a>
+          </p>
+          <ul>
+            <li>
+              <a href="#personally-used-by-me-on-daily-basis"
+                >Personally used by me on daily basis.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
     </main>
+    <style>
+      .post-date span {
+        margin-left: 0;
+      }
+    </style>
     <script defer src="/assets/js/lib/alpine.js"></script>
     <footer>© 2026 Zill_Laiss.</footer>
   </body>
