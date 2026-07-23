@@ -401,16 +401,18 @@ dd {
     color: #afafaf;
 }
 
+@media only screen and (max-width: 1200px) {
+    .toc {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     body {
         overflow-x: scroll;
         /* width: unset; */
         background-color: #0f0f0f;
         background-attachment: fixed;
-    }
-
-    .toc {
-        display: none;
     }
 
     nav ul {
