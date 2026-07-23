@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloud formation - ZL</title>
+    <title>The time I realize that static typing is a life-saver. - ZL</title>
     <link rel="stylesheet" href="/assets/styles/global.css" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/assets/styles/post.css" />
@@ -59,67 +59,53 @@
     <main class="main-pair">
       <article class="post-field">
         <section class="post-header">
-          <h1 class="post-title">Cloud formation</h1>
+          <h1 class="post-title">
+            The time I realize that static typing is a life-saver.
+          </h1>
           <div class="post-date">
-            Written by Zill_Laiss <span>on 2025-08-21</span>
+            Written by Zill_Laiss <span>on 2026-07-23</span>
           </div>
           <div class="tag-field">
-            <span class="tag"><a href="/tags/landscape">landscape</a></span
-            ><span class="tag"
-              ><a href="/tags/photography">photography</a></span
-            >
+            <span class="tag"><a href="/tags/coding">coding</a></span
+            ><span class="tag"><a href="/tags/gdscript">gdscript</a></span>
           </div>
           <div class="bsm"><bdi>بسم الله</bdi></div>
           <p>
             <i
-              >A few days ago, I see this amazing cloud formation at sunrise.</i
+              >It&#39;s saved so much of my time without me realizing. Dynamic
+              typing is only good for a while.</i
             >
           </p>
-          <img
-            src="/assets/images/20250818_061605_v1.jpg"
-            alt="cloud picture"
-            title="Cloud formation"
-          />
         </section>
         <section class="post-content">
           <p>
-            It's interesting for me since recently I have had curiousity about
-            clouds and took the time to read about them, so this is a pleasant
-            surprise. <em>Subhānallah</em>.
+            Some time earlier, I've been using gdscript and it has both static
+            and dynamic typing. I use static typing of course, but some places
+            dynamic typing unavoidable, like in argument passing (I thought this
+            only apply to std libraries but turns out this apply to every
+            functions).
           </p>
           <p>
-            Is it altocomulus? Stratocomulus? I'm not sure. Nevertheless, it's
-            beautiful.
+            Anyway, a bug happened and I could not reason why it happened. The
+            logic was correct, and nothing particularly stand out. You know what
+            caused it? Turned out I passed a boolean to an integer argument,
+            then gdscript just decided to convert that boolean into an integer
+            (so either 1 or 0).
           </p>
-          <h2 id="landscapes">Landscapes</h2>
-          <figure>
-            <img
-              src="/assets/images/20250818_062119_v1.jpg"
-              alt="cloud landscape"
-              title="Cloud formation"
-            />
-            <img
-              src="/assets/images/20250818_061605_v1.jpg"
-              alt="cloud with sunrise landscape"
-              title="With sunraise"
-            />
-          </figure>
-          <h2 id="portraits">Portraits</h2>
+          <pre><code class="language-gd">func foo() -&gt; void:
+	something(true)
+
+# this is a staticly typed function, 
+# or at least that's what I thought...
+func something(bar: int) -&gt; void:
+	print(bar) # prints 1
+</code></pre>
           <p>
-            <em><strong>Long images ahead!</strong></em>
+            No warning, no error, nothing. Just causing weird behavior. Took me
+            a long time since this is impossible to happen in strongly typed
+            languages...
           </p>
-          <p>
-            <img
-              src="/assets/images/20250818_062127_v1.jpg"
-              alt="cloud portrait"
-              title="Cloud formation (portrait)"
-            />
-            <img
-              src="/assets/images/20250818_061630_v1.jpg"
-              alt="cloud with sunrise portrait"
-              title="With sunrise (portrait)"
-            />
-          </p>
+          <p>Alhamdu lillāh for static typing.</p>
         </section>
       </article>
       <aside class="bar-right">
@@ -131,16 +117,10 @@
         >
           <h2 class="hferiae">Table of Content</h2>
           <p style="margin: 0; margin-top: 0.3rem">
-            <a href="#">Cloud formation</a>
+            <a href="#"
+              >The time I realize that static typing is a life-saver.</a
+            >
           </p>
-          <ul>
-            <li>
-              <a href="#landscapes">Landscapes</a>
-            </li>
-            <li>
-              <a href="#portraits">Portraits</a>
-            </li>
-          </ul>
         </div>
       </aside>
     </main>
