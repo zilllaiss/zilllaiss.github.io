@@ -196,6 +196,7 @@
     padding-inline: 2rem;
     margin-right: clamp(5rem, 10%, 60rem);
     border-radius: var(--border-radius);
+	max-width: calc(var(--spacing)*68);
 
     a {
         color: var(--color-fade);
